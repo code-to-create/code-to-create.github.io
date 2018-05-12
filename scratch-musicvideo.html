@@ -1,0 +1,204 @@
+<!doctype html>
+
+<!-- Website Created and Designed by Sarthak Navjivan using HTML, CSS, and JS -->
+
+<!--
+   _____          _        _______       _____                _       
+  / ____|        | |      |__   __|     / ____|              | |      
+ | |     ___   __| | ___     | | ___   | |     _ __ ___  __ _| |_ ___ 
+ | |    / _ \ / _` |/ _ \    | |/ _ \  | |    | '__/ _ \/ _` | __/ _ \
+ | |___| (_) | (_| |  __/    | | (_) | | |____| | |  __/ (_| | ||  __/
+  \_____\___/ \__,_|\___|    |_|\___/   \_____|_|  \___|\__,_|\__\___|
+                                                                      
+-->
+
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Code To Create</title>
+      <link href="https://fonts.googleapis.com/css?family=Roboto:light,regular,bold,black&amp;lang=en" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+      <link rel="icon" href="favicon.png">
+      
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/default.min.css">
+   </head>
+   <body>
+      <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header curriculum list">
+         <div class="header mdl-layout__header mdl-layout__header--transparent">
+            <div class="mdl-layout__header-row">
+               <span class="title mdl-layout-title">
+               <a class="logo" href="index.html">Code<span class="lab">To</span>Create</a>
+               <a href="index.html"><img src="CTC.png" height="51" width="75"/></a>
+               </span>
+               <div class="mdl-layout-spacer"></div>
+               <nav class="mdl-navigation">
+                  <a class="mdl-navigation__link" href="about.html">About</a>
+                  <a class="mdl-navigation__link" href="learn.html">Learn!</a>
+                  <a class="mdl-navigation__link" href="classes.html">Classes</a>
+                  <a class="mdl-navigation__link" href="camps.html">Camps</a>
+                  <a class="mdl-navigation__link" href="team.html">Team</a>
+                  <a class="mdl-navigation__link" href="contact.html">Contact</a>
+               </nav>
+            </div>
+         </div>
+         <div class="mdl-layout__content">
+            <div class="container">
+               <div class="toolbar" id="toolbar">
+                  <div class="author-card mdl-shadow--4dp">
+                     <img class="headshot" src="sarthak-cropped.jpg">
+                     <p class="name">
+                        <span class="by">by</span> Sarthak Navjivan<br>
+                        <a class="email" href="mailto:sarthak@codetocreate.org">sarthak@codetocreate.org</a>
+                     </p>
+                  </div>
+                  <div class="back-card mdl-shadow--4dp"
+                     onclick="document.location.href = 'scratch.html'">
+                     <div class="image">
+                        <div class="color" style="background:#E91E63"></div>
+                        <img src="scratch-square.png">
+                     </div>
+                     <p class="name">
+                        <span class="by">back to course</span><br>
+                        Scratch
+                     </p>
+                  </div>
+               </div>
+               <div class="content mdl-shadow--4dp">
+                  <h1><a id="creating-a-music-video" class="anchor" href="#creating-a-music-video" data-text="Lesson 1: Creating a Music Video" data-ref="creating-a-music-video" data-level="1"><span class="header-link"></span></a>Lesson 1: Creating a Music Video</h1>
+                  <p>You are now truly beginning your journey into Computer Science. In this tutorial, we are  building a short music video.  To make a music video, you need a Sprite (or scratch character), dance moves, scenery, and music.  By the end of this tutorial, you&#39;ll understand that much like dancing is a series of body motions, programming is coding a series of steps that a computer can understand, also known as procedures.  If you do not get it right away, you&#39;ll hopefully understand by the end of this tutorial.</p>
+                  <h2><a id="using-motions-amp-events" class="anchor" href="#using-motions-amp-events" data-text="Using Motions &amp; Events" data-ref="using-motions-amp-events" data-level="2"><span class="header-link"></span></a>Using Motions &amp; Events</h2>
+                  <p>Click on the Events tab. Drag and drop the event command &quot;when green flag clicked&quot; to the right hand side of the page. See the image below for clarification.</p>
+                  <p><img src="musicvideo1.png" alt=""></p>
+                  <p>Click on the motion. Drag and drop &quot;move ten steps&quot; such that it connects with the Events command. See image below for clarification.</p>
+                  <p><img src="musicvideo2.png" alt=""></p>
+                  <p>Click on the green flag in the Sprite compiler and watch the Scratch Cat move every time you press the green flag.</p>
+                  <p>Drag and drop as many motions so you have a complete dance move. If you’re stuck, see the image below and check out how to do the first three steps of the moon walk.</p>
+                  <p><img src="musicvideo4.png" alt=""></p>
+                  <h2><a id="defining-procedures" class="anchor" href="#defining-procedures" data-text="Defining Procedures" data-ref="defining-procedures" data-level="2"><span class="header-link"></span></a>Defining Procedures</h2>
+                  <p>We learned that dance moves are a series of instructions. A series of instructions is also known as a procedure. In computer science, programs are run by many procedures where each procedure houses a series of instructions. We also learned that an event triggers the series of motions. When the flag is clicked, the Sprite will execute a series of motions. Computer programs can also run when triggered by an &quot;Event&quot;.</p>
+                  <h1><a id="controlling-the-dancing-routine" class="anchor" href="#controlling-the-dancing-routine" data-text="Controlling the Dancing Routine" data-ref="controlling-the-dancing-routine" data-level="2"><span class="header-link"></span></a>Controlling the Dancing Routine</h1>
+                  <p>Next, we will be learning how to control your dance moves through the coordination of events
+                     Now that you have a groovy dance move. Under Events, click on Control. Drag and drop any of the first three Control command blocks. See below for an example.
+                  </p>
+                  <p><img src="musicvideo5.png" alt=""></p>
+                  <p><strong data-definition="figure-1-forever-loop-motion">Figure 1. Forever Loop Motion</strong>  Using the forever control block, I am looping the dance procedure to run <strong data-definition="forever">FOREVER</strong>. A loop is an important computer science concept that you will be learning in your future programming.</p>
+                  <p>We will add a backup dancer whose routine will be triggered by another Event block. Click on the symbol next to “New Sprite” to create your backup dancer.</p>
+                  <p>For your backup dancer, choose an Event block that will trigger a series of costume changes, then create dance procedure, and finally add a Control block.  See the image below, if you need some inspiration.  A costume change is another of way of changing a static image to elaborate motion.</p>
+                  <p><img src="musicvideo7.png" alt=""></p>
+                  <p>Add a costume change block to the Scratch Cat’s dance routine.
+                     Great now we just have to add a backdrop and some music to make the music video complete!
+                  </p>
+                  <h2><a id="relationship-between-control-and-events" class="anchor" href="#relationship-between-control-and-events" data-text="Relationship between Control and Events" data-ref="relationship-between-control-and-events" data-level="2"><span class="header-link"></span></a>Relationship between Control and Events</h2>
+                  <p>We learned that we can control how to execute motion command blocks.  These motions can run forever, repeated, or synced with time.  Imagine you are dancing in your own music video and you come up with a routine.  How would you control your motions?  What series of steps would you execute.  We also learned that we can coordinate the motions of the main dancer and the backup dancer by controlling which Events trigger their dance moves.</p>
+                  <h1><a id="setting-the-scene-and-dancing-to-music" class="anchor" href="#setting-the-scene-and-dancing-to-music" data-text="Setting the Scene and Dancing to Music" data-ref="setting-the-scene-and-dancing-to-music" data-level="2"><span class="header-link"></span></a>Setting the Scene and Dancing to Music</h1>
+                  <p>We will wrap up our first tutorial by introducing music and scene changes!</p>
+                  <p>In the bottom left quadrant of the screen, click on new backdrop and select one to start your music video with.</p>
+                  <p>Select another backdrop and change the backdrop according to your main dancer’s motions by inserting a switch backdrop command block from the looks tab.  </p>
+                  <p><img src="musicvideo8.png" alt=""></p>
+                  <p>Click on the Sounds tab and select what musical sounds you would like to use in your music video.</p>
+                  <p><img src="musicvideo9.png" alt=""></p>
+                  <p>Go to the Sounds scripts and cue the music to your character’s dance moves.  See the image below of an example of how to implement sound change with your main dancer’s moves.</p>
+                  <p><img src="musicvideo10.png" alt=""></p>
+                  <h2><a id="controlling-back-drop-events-with-sounds" class="anchor" href="#controlling-back-drop-events-with-sounds" data-text="Controlling Back Drop Events with Sounds" data-ref="controlling-back-drop-events-with-sounds" data-level="2"><span class="header-link"></span></a>Controlling Back Drop Events with Sounds</h2>
+                  <p>We learned to control backdrop changes with sounds.  In computer science, advanced programs are made up of different components that can work in dependence or independence of each other.  If you are dancing in a music video, what cues would you give yourself to remember which dance to do at which time?  Would you listen for a specific word, wait for a background or costume change, or would you wait for a specific motion from a backup dancer?</p>
+                  <p>Congratulations you have finished your Scratch tutorial! Now you know the basics, go over and create a more complex music video with sounds or explore other Scratch music videos, there are some phenomenal ones out there that are downright groovy!</p>
+               </div>
+               <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--4dp section-link"
+                  onclick="window.location.href = 'scratch-brickbreaker.html'"
+                  data-next="scratch-brickbreaker.html"
+                  data-image="brickbreaker.png"
+                  data-title="Brick Breaker"
+                  data-pretitle=""
+                  data-text="Learn about cloning sprites and object-oriented programming by creating a game where a ball destroys objects placed on the screen">
+                  <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white"
+                     style="background-image:url(brickbreaker.png)">
+                     <div class="color" style="background-color:#E91E63"></div>
+                     <i class="material-icons"> play_circle_filled </i>
+                  </header>
+                  <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                     <div class="mdl-card__supporting-text content">
+                        <h3><span style="color:#cfcfcf;margin-right:10px;font-weight:300;">
+                           NEXT 
+                           </span> Brick Breaker
+                        </h3>
+                        <p style="opacity:0.8">Learn about cloning sprites and object-oriented programming by creating a game where a ball destroys objects placed on the screen</p>
+                     </div>
+                  </div>
+               </section>
+               <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--4dp section-link"
+                  onclick="window.location.href = 'scratch.html'"
+                  data-next="scratch.html"
+                  data-image="scratch-square.png"
+                  data-title=""
+                  data-pretitle="BACK"
+                  data-text="A tutorial for those new to computer science">
+                  <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white"
+                     style="background-image:url(scratch-square.png)">
+                     <div class="color" style="background-color:#E91E63"></div>
+                     <i class="material-icons"> view_list </i>
+                  </header>
+                  <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                     <div class="mdl-card__supporting-text content">
+                        <h3><span style="color:#cfcfcf;margin-right:10px;font-weight:300;">
+                           BACK 
+                           </span> 
+                        </h3>
+                        <p style="opacity:0.8">A simple, fun, and colorful introduction to computer science</p>
+                     </div>
+                  </div>
+               </section>
+            </div>
+            <footer class="mdl-mega-footer">
+                  <div class="mdl-mega-footer__middle-section">
+                     <div class="mdl-mega-footer__drop-down-section">
+                        <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                        <h1 class="mdl-mega-footer__heading">About</h1>
+                        <ul class="mdl-mega-footer__link-list">
+                           <li><a href="about.html">About Us</a></li>
+                           <li><a href="learn.html">Learn Online</a></li>
+                           <li><a href="classes.html">Classes</a></li>
+                           <li><a href="camps.html">Camps</a></li>
+                           <li><a href="team.html">Team</a></li>
+                        </ul>
+                     </div>
+                     <div class="mdl-mega-footer__drop-down-section">
+                        <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                        <h1 class="mdl-mega-footer__heading">Quick Information</h1>
+                        <ul class="mdl-mega-footer__link-list">
+                           <li><strong style="color:#ffffff;opacity:0.6">Locations</strong><br>
+                              Pittsburgh, PA<br>
+                              Singapore, Singapore
+                           </li>
+                           <li style="margin-top:10px">
+                              <strong style="color:#ffffff;opacity:0.6">Email</strong><br>
+                              <a href="mailto:contact@codetocreate.org">
+                              contact@codetocreate.org</a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="mdl-mega-footer__drop-down-section">
+                        <br>
+                        <a href="https://twitter.com/code_to_create" target="_blank"><img src="twitter.png" width="80"></a>
+                        <a href="https://www.youtube.com/channel/UCsl6bPVaVRZ-CzQk3iu__cA" target="_blank"><img src="youtube.png" width="105"></a>
+                     </div>
+                  </div>
+                  <div class="mdl-mega-footer__bottom-section">
+                     <div class="mdl-logo">Website Designed by <a href="http://snavjivan.github.io" target="_blank">Sarthak Navjivan</a></div>
+                     <div class="mdl-logo">&copy; Code To Create, 2018</div>
+                     <ul class="mdl-mega-footer__link-list">
+                        <li><a href="contact.html">Contact Us</a></li>
+                     </ul>
+                  </div>
+               </footer>
+         </div>
+      </div>
+      <script src="app.js"></script>
+      <script src="curriculum.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script>
+   </body>
+</html>

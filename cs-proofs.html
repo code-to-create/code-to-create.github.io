@@ -1,0 +1,234 @@
+<!doctype html>
+
+<!-- Website Created and Designed by Sarthak Navjivan using HTML, CSS, and JS -->
+
+<!--
+   _____          _        _______       _____                _       
+  / ____|        | |      |__   __|     / ____|              | |      
+ | |     ___   __| | ___     | | ___   | |     _ __ ___  __ _| |_ ___ 
+ | |    / _ \ / _` |/ _ \    | |/ _ \  | |    | '__/ _ \/ _` | __/ _ \
+ | |___| (_) | (_| |  __/    | | (_) | | |____| | |  __/ (_| | ||  __/
+  \_____\___/ \__,_|\___|    |_|\___/   \_____|_|  \___|\__,_|\__\___|
+                                                                      
+-->
+
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Code To Create</title>
+      <link href="https://fonts.googleapis.com/css?family=Roboto:light,regular,bold,black&amp;lang=en" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+      <link rel="icon" href="favicon.png">
+      
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/default.min.css">
+   </head>
+   <body>
+      <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header curriculum list">
+         <div class="header mdl-layout__header mdl-layout__header--transparent">
+            <div class="mdl-layout__header-row">
+               <span class="title mdl-layout-title">
+               <a class="logo" href="index.html">Code<span class="lab">To</span>Create</a>
+               <a href="index.html"><img src="CTC.png" height="51" width="75"/></a>
+               </span>
+               <div class="mdl-layout-spacer"></div>
+               <nav class="mdl-navigation">
+                  <a class="mdl-navigation__link" href="about.html">About</a>
+                  <a class="mdl-navigation__link" href="learn.html">Learn!</a>
+                  <a class="mdl-navigation__link" href="classes.html">Classes</a>
+                  <a class="mdl-navigation__link" href="camps.html">Camps</a>
+                  <a class="mdl-navigation__link" href="team.html">Team</a>
+                  <a class="mdl-navigation__link" href="contact.html">Contact</a>
+               </nav>
+            </div>
+         </div>
+         <div class="mdl-layout__content">
+            <div class="container">
+               <div class="toolbar" id="toolbar">
+                  <div class="author-card mdl-shadow--4dp">
+                     <img class="headshot" src="sarthak-cropped.jpg">
+                     <p class="name">
+                        <span class="by">by</span> Sarthak Navjivan<br>
+                        <a class="email" href="mailto:sarthak@codetocreate.org">sarthak@codetocreate.org</a>
+                     </p>
+                  </div>
+                  <div class="back-card mdl-shadow--4dp"
+                     onclick="document.location.href = 'cs.html'">
+                     <div class="image">
+                        <div class="color" style="background:#4CAF50"></div>
+                        <img src="cs-square.png">
+                     </div>
+                     <p class="name">
+                        <span class="by">back to course</span><br>
+                        Computer Science
+                     </p>
+                  </div>
+               </div>
+               <div class="content mdl-shadow--4dp">
+                  <h1><a id="computer-science-proofs" class="anchor" href="#computer-science-proofs" data-text="Computer science proofs" data-ref="computer-science-proofs" data-level="1"><span class="header-link"></span></a>Computer science proofs</h1>
+                  <p>In the study of computation and its limitations, one will often need to make true or false assertions about precise statements. While the exact wording and format of the assertion may vary, the logical reasoning must follow rigorous mathematical standards.</p>
+                  <p>Consider the statement &quot;pigs can fly&quot; - one would obviously make the assertion that &quot;pigs cannot fly&quot;. However, a pig floating around in space is, by some definition, flying, so there do exist some situations where pigs can fly. To make this a useful assertion, I need to specify the <strong data-definition="problem-space">problem space</strong> where &quot;pigs can fly&quot; is false - in this case, on Earth. A more precise wording of this statement would be <em>the statement &quot;pigs can fly&quot; is false on Earth</em>. I could take this one step further and state <em>&quot;pigs can fly&quot; is false for every gravitational field stronger than X</em> (where <em>X</em> is a numeric measure of gravity).</p>
+                  <h2><a id="counterexample" class="anchor" href="#counterexample" data-text="Counterexample" data-ref="counterexample" data-level="2"><span class="header-link"></span></a>Counterexample</h2>
+                  <p>In my &quot;pigs cannot fly&quot; assertion, I could buy a pig a plane ticket as a <strong data-definition="counterexample">counterexample</strong> to the assertion. That is, I could produce a concrete example within the problem space that disproves an assertion. If I state that an assertion is true for an entire problem space, then any example in that problem space for which my assertion is false disproves the assertion.</p>
+                  <p>Consider this famous counterexample to a <strong data-definition="conjecture">conjecture</strong> by <strong data-definition="euler">Euler</strong>.</p>
+                  <p><img src="counterexample.png" alt=""></p>
+                  <p>A proof by counterexample is a useful way to prove a statement as true or false. If I have to <strong data-definition="disprove">disprove</strong> the statement &quot;all zebras have an equal number of black and white stripes&quot; is false, I don&#39;t have to find every zebra and count its stripes, I just need to find one zebra with a different number of black and white stripes.</p>
+                  <h2><a id="direct-proof" class="anchor" href="#direct-proof" data-text="Direct proof" data-ref="direct-proof" data-level="2"><span class="header-link"></span></a>Direct proof</h2>
+                  <p>The statements you will learn to prove will be mathematical ones - there is little real-world significance for the airborne capabilities of a pig or the stripe count of a zebra. One of the most straightforward ways to prove mathematical statements is to form a concise argument using mathematical reasoning.</p>
+                  <p>Consider the statement &quot;the sum of two even numbers is always even&quot;. Simply pointing out that `2 + 2 = 4` and `102 + 106 = 208` does not prove that this statement is true for every even number, even if it is fairly obvious that it is. A <strong data-definition="direct-proof">direct proof</strong> of this statement is to first define it mathematically, then use that mathematical definition along with known mathematical properties to prove a <em>general solution</em>.</p>
+                  <p>One way to define the statement mathematically is &quot;given two even numbers `x` and `y`, the sum `x + y` is even.&quot; I used <strong data-definition="variables">variables</strong> to clearly represent the two numbers being added, and I use a mathematical expression (`x + y`) to state the intended result.</p>
+                  <p>The next part requires more intuition on how to reason about things mathematically. In this case, we would reason &quot;since `x` is even, it must be twice the value of some <strong data-definition="integer">integer</strong> `a`, so `x = 2a`. Similarly, `y` must be twice some integer `b`, so `y = 2b`. Therefore, `x + y = 2a + 2b = 2(a + b)`. Therefore `x + y` has `2` as a factor, so it must be even as well.&quot;</p>
+                  <p>In a direct proof, it is not necessary to explicitly state well-known mathematical properties like addition, the definition of even integers, or the <strong data-definition="distributive-property-of-multiplication">distributive property of multiplication</strong>. In a more complex direct proof, a mathematician will often clearly state the <strong data-definition="axioms">axioms</strong> and assumptions used in the proof, but for our purposes we will hardly ever need to do so.</p>
+                  <h4><a id="direct-proof-exercises" class="anchor" href="#direct-proof-exercises" data-text="Direct proof exercises" data-ref="direct-proof-exercises" data-level="4"><span class="header-link"></span></a>Direct proof exercises</h4>
+                  <ol>
+                     <li>Prove that the sum of an odd integer and an even integer is odd.</li>
+                     <li>Prove that the product of two odd integers is odd.</li>
+                     <li>Prove that the square of an odd integer is odd (i.e. if `n` is odd, then `n^2` is also odd).</li>
+                     <li>If `n` is an even integer, then `(-1)^n = 1`.</li>
+                     <li>If `a` is divisible by `b` and `b` is divisible by `c`, then `a` is divisible by `c`.</li>
+                  </ol>
+                  <h2><a id="case-analysis" class="anchor" href="#case-analysis" data-text="Case Analysis" data-ref="case-analysis" data-level="2"><span class="header-link"></span></a>Case Analysis</h2>
+                  <p>Suppose I told you that every integer that is a <strong data-definition="perfect-cube">perfect cube</strong> is a multiple of 9. There are infinitely many numbers, so I cannot simply test every number to see if this property holds. Even if I test every number up to a billion, I can&#39;t be absolutely sure that this statement is true for an even larger number.</p>
+                  <p>One way to prove this statement is true is to think in <strong data-definition="cases">cases</strong>, and consider each possibility for the number `n` that we are testing the statement on. There are three possible cases for `n`:</p>
+                  <ol>
+                     <li>`n` is a multiple of 3 (0, 3, 6, 9, ...)</li>
+                     <li>`n` is one more than a multiple of 3 (1, 4, 7, 10, ...)</li>
+                     <li>`n` is one less than a multiple of 3 (2, 5, 8, 11, ...)</li>
+                  </ol>
+                  <p>Let us consider each case separately:</p>
+                  <ol>
+                     <li>If `n` is a multiple of 3, then `n = 3p`, where `p` is an integer. Therefore, `n^3 = (3p) ^ 3 = 3^3 &times; p^3 = 9 &times; 3 &times; p ^ 3`, so `n^3` is a multiple of 9.</li>
+                     <li>If `n` is one more than a multiple of 3, then `n = 3p + 1`, where `p` is an integer. Therefore `n^3 = 27p^3 + 27p^2 + 9p + 1 = 9 &times; (3p^3 + 3p^2 + p) + 1`, so `n^3` is one more than a multiple of 9.</li>
+                     <li>If `n` is one less than a multiple of 3, then `n = 3p - 1`, where `p` is an integer. Therefore `n^3 = 27p^3 − 27p^2 + 9p − 1 = 9 &times; (3p^3 - 3p^2 + p) - 1`, so `n^3` is one less than a multiple of 9.</li>
+                  </ol>
+                  <p>In all three cases, the cube of a number produces a multiple of 9, and every possible integer falls into one of the three cases. Therefore, we can make the statement that this holds true for all integer values.</p>
+                  <h4><a id="case-analysis-exercises" class="anchor" href="#case-analysis-exercises" data-text="Case analysis exercises" data-ref="case-analysis-exercises" data-level="4"><span class="header-link"></span></a>Case analysis exercises</h4>
+                  <ol>
+                     <li>Prove that if `n` is an integer, `n^2 + n + 2` is even.</li>
+                     <li>Suppose that `x_1, x_2, x_3, x_4, x_5` are numbers such that `x_1\le x_2\le x_3\le x_4\le x_5` and `x_1+x_2+x_3+x_4+x_5=50`. Prove that `x_1+x_2\le 20`.</li>
+                     <li>Suppose any two people at a party have either met or not. If every pair of people in a group has met, we’ll call the group a club. If every pair of people in a group has not met, we’ll call it a group of strangers. Prove that any six people at the party includes a club of 3 people or a group of 3 strangers.</li>
+                     <li>At a school dance, there are an equal number of boys and girls. For any pair of boy and girl, we know whether they would like to dance together or not. Prove that there is a perfect pairing of boys and girls (i.e. everybody has a dance partner) <strong data-definition="if-and-only-if">if and only if</strong> for any subset of boys there is at least the same number of girls willing to dance with them.</li>
+                  </ol>
+                  <h2><a id="inductive-proof" class="anchor" href="#inductive-proof" data-text="Inductive proof" data-ref="inductive-proof" data-level="2"><span class="header-link"></span></a>Inductive proof</h2>
+                  <p>A proof by induction establishes a statement as true for a <strong data-definition="well-ordered-set">well-ordered set</strong>, usually the natural numbers (1, 2, 3, ...). The first step is to prove the statement holds for a <strong data-definition="base-case">base case</strong>, usually for the first natural number 1. The next step, called the <strong data-definition="inductive-step">inductive step</strong>, is to prove that the statement holding true for any number `k` implies that the statement holds true for the number `k + 1`.</p>
+                  <p>Consider the formula for the sum of the natural numbers from `1` to `n`.</p>
+                  <p>`1 + 2 + ... + n = \frac{n(n + 1)}{2} `</p>
+                  <p>Testing different values of `n` can give you a reasonable expectation that this formula works for all values of `n`, but simply showing working examples like `1 + 2 + 3 + 4 = \frac{4 &times; 5}{2}` is not a proof. The most straightforward way to prove this formula is true for all values of `n` is by <strong data-definition="induction">induction</strong>.</p>
+                  <p>First, we must show this works for the <strong data-definition="base-case">base case</strong> of `1`.</p>
+                  <p>`1 = \frac{1 &times; (1 + 1)}{2} = \frac{2}{2} = 1`</p>
+                  <p>Next, we must show that if this statement is true for any number `k`, it is also true for `k + 1`. The <strong data-definition="inductive-step">inductive step</strong> usually requires some creative thinking, logical reasoning, and mathematical intuition.</p>
+                  <p>Start with the <strong data-definition="induction-hypothesis">induction hypothesis</strong> that this statement is true for `k`, so</p>
+                  <p>`1 + 2 + ... + k = \frac{k(k + 1)}{2} `</p>
+                  <p>Your goal is to prove that <em>given the induction hypothesis is true</em>, that the statement below is also true.</p>
+                  <p>`1 + 2 + ... + k + (k + 1) = \frac{(k + 1)((k + 1) + 1)}{2} `</p>
+                  <p>You can substitute the induction hypothesis of `1 + 2 + ... + k = \frac{k(k + 1)}{2}` into the statement to produce an expression that can be simplified easily.</p>
+                  <p>`\frac{k(k + 1)}{2} + (k + 1) = \frac{(k + 1)((k + 1) + 1)}{2} `</p>
+                  <p>At this point, you may be tempted to simplify this equality down by subtracting from both sides and multiplying until you reach `0 = 0`, but this is not a rigorous nor conventional way to prove mathematical statements. Leaving one side of the equality constant, simplify the other side to the same value. In this case, it is easier to leave the right side constant and simplify the left, but in other proofs you may choose to leave the left side constant and simplify the right side.</p>
+                  <p>`\frac{(k + 1)((k + 1) + 1)}{2} = \frac{k(k + 1)}{2} + (k + 1)`</p>
+                  <p>`= \frac{k(k + 1)}{2} + \frac{2(k + 1)}{2}`</p>
+                  <p>`= \frac{k(k + 1) + 2(k + 1)}{2}`</p>
+                  <p>`= \frac{(k + 1)(k + 2)}{2}`</p>
+                  <p>`= \frac{(k + 1)((k + 1) + 1)}{2}`</p>
+                  <p>Since we have proven the base case and the induction hypothesis are true, this statement must hold true for all numbers.</p>
+                  <h4><a id="induction-proof-exercises" class="anchor" href="#induction-proof-exercises" data-text="Induction proof exercises" data-ref="induction-proof-exercises" data-level="4"><span class="header-link"></span></a>Induction proof exercises</h4>
+                  <ol>
+                     <li>Prove that `1 \times 2 + 2 \times 3 + ... + n \times (n + 1) = \frac{n(n + 1)(n + 2)}{3}`.</li>
+                     <li>Prove that `2^0 + 2^1 + 2^2 + ... + 2^n = 2^{n + 1} - 1`.</li>
+                     <li>Prove that for any value `r` such that `r \ne 1`, `r^0 + r^1 + r^2 + ... + r^n = \frac{1 - r^{n + 1}}{1 - r}`.</li>
+                     <li>Prove that for any integer value `n`, `2^n &gt; n`.</li>
+                     <li>Prove that for any odd integers `x_1, x_2, ... , x_n`, the product `x_1 \times x_2 \times ... \times x_n` is odd.</li>
+                  </ol>
+                  <h1>Vocabulary</h1>
+                  <p class="mdl-definition"
+                     data-define="problem-space"
+                     data-title="Problem space"
+                     data-text="An exact specification (mathematical or otherwise) of the relevant information to a problem.">
+                     <strong>Problem space</strong> - An exact specification (mathematical or otherwise) of the relevant information to a problem.
+                  </p>
+                  <p class="mdl-definition"
+                     data-define="well-ordered-set"
+                     data-title="Well-ordered set"
+                     data-text="A set where any non-empty subset has a least element.">
+                     <strong>Well-ordered set</strong> - A set where any non-empty subset has a least element.
+                  </p>
+                  <h1>References</h1>
+                  <p>This lesson was written based on notes taken during lectures by Dr. Steven Rudich during the Leap@CMU program.
+               </div>
+               <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--4dp section-link"
+                  onclick="window.location.href = 'cs.html'"
+                  data-next="cs.html"
+                  data-image="cs-square.png"
+                  data-title="Computer Science"
+                  data-pretitle="BACK"
+                  data-text="An introduction to the theory of computation.">
+                  <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white"
+                     style="background-image:url(cs-square.png)">
+                     <div class="color" style="background-color:#4CAF50"></div>
+                     <i class="material-icons"> view_list </i>
+                  </header>
+                  <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                     <div class="mdl-card__supporting-text content">
+                        <h3><span style="color:#cfcfcf;margin-right:10px;font-weight:300;">
+                           BACK 
+                           </span> Computer Science
+                        </h3>
+                        <p style="opacity:0.8">An introduction to the theory of computation.</p>
+                     </div>
+                  </div>
+               </section>
+            </div>
+            <footer class="mdl-mega-footer">
+                  <div class="mdl-mega-footer__middle-section">
+                     <div class="mdl-mega-footer__drop-down-section">
+                        <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                        <h1 class="mdl-mega-footer__heading">About</h1>
+                        <ul class="mdl-mega-footer__link-list">
+                           <li><a href="about.html">About Us</a></li>
+                           <li><a href="learn.html">Learn Online</a></li>
+                           <li><a href="classes.html">Classes</a></li>
+                           <li><a href="camps.html">Camps</a></li>
+                           <li><a href="team.html">Team</a></li>
+                        </ul>
+                     </div>
+                     <div class="mdl-mega-footer__drop-down-section">
+                        <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                        <h1 class="mdl-mega-footer__heading">Quick Information</h1>
+                        <ul class="mdl-mega-footer__link-list">
+                           <li><strong style="color:#ffffff;opacity:0.6">Locations</strong><br>
+                              Pittsburgh, PA<br>
+                              Singapore, Singapore
+                           </li>
+                           <li style="margin-top:10px">
+                              <strong style="color:#ffffff;opacity:0.6">Email</strong><br>
+                              <a href="mailto:contact@codetocreate.org">
+                              contact@codetocreate.org</a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="mdl-mega-footer__drop-down-section">
+                        <br>
+                        <a href="https://twitter.com/code_to_create" target="_blank"><img src="twitter.png" width="80"></a>
+                        <a href="https://www.youtube.com/channel/UCsl6bPVaVRZ-CzQk3iu__cA" target="_blank"><img src="youtube.png" width="105"></a>
+                     </div>
+                  </div>
+                  <div class="mdl-mega-footer__bottom-section">
+                     <div class="mdl-logo">Website Designed by <a href="http://snavjivan.github.io" target="_blank">Sarthak Navjivan</a></div>
+                     <div class="mdl-logo">&copy; Code To Create, 2018</div>
+                     <ul class="mdl-mega-footer__link-list">
+                        <li><a href="contact.html">Contact Us</a></li>
+                     </ul>
+                  </div>
+               </footer>
+         </div>
+      </div>
+      <script src="app.js"></script>
+      <script src="curriculum.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script>
+      <script type="text/javascript"
+         src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML-full"></script>
+   </body>
+</html>

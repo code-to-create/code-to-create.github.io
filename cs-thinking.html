@@ -1,0 +1,312 @@
+<!doctype html>
+
+<!-- Website Created and Designed by Sarthak Navjivan using HTML, CSS, and JS -->
+
+<!--
+   _____          _        _______       _____                _       
+  / ____|        | |      |__   __|     / ____|              | |      
+ | |     ___   __| | ___     | | ___   | |     _ __ ___  __ _| |_ ___ 
+ | |    / _ \ / _` |/ _ \    | |/ _ \  | |    | '__/ _ \/ _` | __/ _ \
+ | |___| (_) | (_| |  __/    | | (_) | | |____| | |  __/ (_| | ||  __/
+  \_____\___/ \__,_|\___|    |_|\___/   \_____|_|  \___|\__,_|\__\___|
+                                                                      
+-->
+
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Code To Create</title>
+      <link href="https://fonts.googleapis.com/css?family=Roboto:light,regular,bold,black&amp;lang=en" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+      <link rel="icon" href="favicon.png">
+      
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/default.min.css">
+   </head>
+   <body>
+      <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header curriculum list">
+         <div class="header mdl-layout__header mdl-layout__header--transparent">
+            <div class="mdl-layout__header-row">
+               <span class="title mdl-layout-title">
+               <a class="logo" href="index.html">Code<span class="lab">To</span>Create</a>
+               <a href="index.html"><img src="CTC.png" height="51" width="75"/></a>
+               </span>
+               <div class="mdl-layout-spacer"></div>
+               <nav class="mdl-navigation">
+                  <a class="mdl-navigation__link" href="about.html">About</a>
+                  <a class="mdl-navigation__link" href="learn.html">Learn!</a>
+                  <a class="mdl-navigation__link" href="classes.html">Classes</a>
+                  <a class="mdl-navigation__link" href="camps.html">Camps</a>
+                  <a class="mdl-navigation__link" href="team.html">Team</a>
+                  <a class="mdl-navigation__link" href="contact.html">Contact</a>
+               </nav>
+            </div>
+         </div>
+         <div class="mdl-layout__content">
+            <div class="container">
+               <div class="toolbar" id="toolbar">
+                  <div class="author-card mdl-shadow--4dp">
+                     <img class="headshot" src="sarthak-cropped.jpg">
+                     <p class="name">
+                        <span class="by">by</span> Sarthak Navjivan<br>
+                        <a class="email" href="mailto:sarthak@codetocreate.org">sarthak@codetocreate.org</a>
+                     </p>
+                  </div>
+                  <div class="back-card mdl-shadow--4dp"
+                     onclick="document.location.href = 'cs.html'">
+                     <div class="image">
+                        <div class="color" style="background:#4CAF50"></div>
+                        <img src="cs-square.png">
+                     </div>
+                     <p class="name">
+                        <span class="by">back to course</span><br>
+                        Computer Science
+                     </p>
+                  </div>
+               </div>
+               <div class="content mdl-shadow--4dp">
+                  <h1><a id="thinking-like-a-computer-scientist" class="anchor" href="#thinking-like-a-computer-scientist" data-text="Thinking like a computer scientist" data-ref="thinking-like-a-computer-scientist" data-level="1"><span class="header-link"></span></a>Thinking like a computer scientist</h1>
+                  <p>Computer scientists take abstract problems and goals that can be solved with a computer, and convert them into a sequence of steps (an <strong data-definition="algorithm">algorithm</strong>). Once a computer scientist has formed a conceptual understanding of a problem, they can write the <strong data-definition="implementation">implementation</strong> that is carried out by a computer.</p>
+                  <h2><a id="thinking-requires-experience" class="anchor" href="#thinking-requires-experience" data-text="Thinking requires experience" data-ref="thinking-requires-experience" data-level="2"><span class="header-link"></span></a>Thinking requires experience</h2>
+                  <p>When an average person is asked to plan a wedding, they will initially be overwhelmed - planning a big event is a complex task. A wedding planner, on the other hand, has a systematic process for completing the large task of planning a wedding as a sequence of smaller tasks. In each smaller tasks, they have a clear understanding of what is feasible, where the best resources are, and which choices yielded the best results for them in the past.</p>
+                  <p>An experienced event planner can take an informal description of an event and create an implementation that can be carried out by their team. Similarly, an experienced computer scientist can take an abstract problem and devise the step-by-step procedure that a computer can follow to produce the intended result.</p>
+                  <h2><a id="thinking-is-writing" class="anchor" href="#thinking-is-writing" data-text="Thinking is writing" data-ref="thinking-is-writing" data-level="2"><span class="header-link"></span></a>Thinking is writing</h2>
+                  <p>In any profession, thinking is expressed by some form of writing: architects sketch a blueprint, scientists put together a hypothesis, and entrepreneurs write a business plan. The way that thoughts are written formalizes the thinking patterns of the writer. In computer science, the writing used to convey ideas is called <strong data-definition="pseudocode">pseudocode</strong>.</p>
+                  <p>Here is an example of pseudocode for a popular American song, &quot;99 Bottles of Beer&quot;.</p>
+                  <pre><code>set n to 99
+while n is greater than 0,
+    sing n
+    sing &quot;bottles of beer on the wall&quot;
+    sing n
+    sing &quot;bottles of beer. Take one down, pass it around&quot;
+    sing n - 1
+    sing &quot;bottles of beer on the wall&quot;
+    reduce n by 1
+</code></pre>
+                  <p>Pseudocode doesn&#39;t have any formal specification - I could just as easily have written <code>yodel</code> instead of <code>sing</code>, or <code>n = 99</code> instead of <code>set n to 99</code>. I could have even written <code>sing &#39;n bottles of beer...&#39;</code> and have it be assumed that one would not literally sing the letter <code>n</code>. The sole purpose of pseudocode is to informally convey the underlying steps to perform an algorithm.</p>
+                  <h2><a id="thinking-with-functions" class="anchor" href="#thinking-with-functions" data-text="Thinking with functions" data-ref="thinking-with-functions" data-level="2"><span class="header-link"></span></a>Thinking with functions</h2>
+                  <p>Here is another pseudocode example for singing a popular 70&#39;s song.</p>
+                  <pre><code>define singPhrase with line, as
+    sing line
+    sing &quot;uh huh uh huh&quot;
+
+singPhrase with &quot;that&#39;s the way&quot;
+singPhrase with &quot;I like it&quot;
+</code></pre>
+                  <p>In the pseudocode, I defined a <strong data-definition="function">function</strong> - a sequence of reusable instructions that can take inputs and produce outputs. The function&#39;s name is <code>singPhrase</code>, and it takes an input called <code>line</code>. The instruction <code>singPhrase with &quot;that&#39;s the way&quot;</code> is instructing the <code>singPhrase</code> function to use <code>&quot;that&#39;s the way&quot;</code> as the value for the word <code>line</code>, and perform the two instructions that are indented under <code>singPhrase</code>.  </p>
+                  <h2><a id="thinking-with-repetitions" class="anchor" href="#thinking-with-repetitions" data-text="Thinking with repetitions" data-ref="thinking-with-repetitions" data-level="2"><span class="header-link"></span></a>Thinking with repetitions</h2>
+                  <p>Here is another example of pseudocode to describe my daily routine.</p>
+                  <pre><code>while I am alive,
+    wake up
+    brush teeth
+    ...
+    eat dinner
+    sleep
+</code></pre>
+                  <p>The <code>while</code> statement repeats the instructions indented under <code>while I am alive</code> as long as <code>I am alive</code> is a true statement. I could have effectively written this same pseudocode by simply copying and pasting the instructions as shown below.</p>
+                  <pre><code>wake up
+brush teeth
+...
+eat dinner
+sleep
+wake up
+brush teeth
+...
+</code></pre>
+                  <p>The problem with the pseudocode above is that I don&#39;t know how many times I will need to copy and paste the instructions. The <code>while I am alive</code> instruction has a <strong data-definition="condition">condition</strong> (<code>I am alive</code>) which controls whether the instructions indented under it are performed. As long as the condition is true, another repetition of the instructions is performed.</p>
+                  <h2><a id="thinking-with-branches" class="anchor" href="#thinking-with-branches" data-text="Thinking with branches" data-ref="thinking-with-branches" data-level="2"><span class="header-link"></span></a>Thinking with branches</h2>
+                  <p>Suppose I watch a new movie every Saturday night.</p>
+                  <pre><code>while I am alive,
+    wake up
+    brush teeth
+    ...
+    eat dinner
+    if day is Saturday, then
+        watch a new movie
+    sleep
+</code></pre>
+                  <p>Every day, after I <code>eat dinner</code>, I check what day it is. If it is Saturday, I <code>watch a new movie</code>, then <code>sleep</code>. If it&#39;s not Saturday, I don&#39;t do the <code>watch a new movie</code> instruction, I just jump straight to <code>sleep</code>. I can convey all the nuances of my life this way.</p>
+                  <pre><code>if day is Saturday or Sunday,
+    wake up at 8 am
+otherwise
+    wake up at 6 am
+</code></pre>
+                  <p>Once again, we encounter a condition, which in this case is <code>day is Saturday or Sunday</code>. The instructions indented under the <code>if</code> statement are performed once if the condition is true. In the second pseudocode example, there is also another instruction following the <code>if</code>, <code>otherwise</code>, which performs a different set of instructions if the condition is false.</p>
+                  <p>Here is some pseudocode to convert a percentage score to its corresponding letter grade.</p>
+                  <pre><code>if my grade is greater than 90,
+    say &quot;I got an A&quot;
+if my grade is greater than 80,
+    say &quot;I got a B&quot;
+if my grade is greater than 70,
+    say &quot;I got a C&quot;
+if my grade is greater than 60,
+    say &quot;I got a D&quot;
+if my grade is greater than 0,
+    say &quot;I got an F&quot;
+</code></pre>
+                  <p>Suppose you got an 85. The first condition, <code>my grade is greater than 90</code>, is false, so the <code>say &quot;I got an A&quot;</code> instruction will not be performed. The second condition, <code>my grade is greater than 80</code>, is true, so the <code>say &quot;I got a B&quot;</code> instruction <em>will</em> be performed. However, the program continues and checks <code>my grade is greater than 70</code>, which is also true, so it will also perform <code>say &quot;I got a C&quot;</code>. Likewise, the other conditions are true, so this program will incorrectly respond that your 85 got you a B, C, D, and F!</p>
+                  <p>A correct version of the program above would use the <code>otherwise</code> keyword to imply that a condition should only be checked if no previous condition was true. Once a true condition is found, its indented instructions are performed, and no further instructions are performed.</p>
+                  <pre><code>if my grade is greater than 90,
+    say &quot;I got an A&quot;
+otherwise if my grade is greater than 80,
+    say &quot;I got a B&quot;
+otherwise if my grade is greater than 70,
+    say &quot;I got a C&quot;
+otherwise if my grade is greater than 60,
+    say &quot;I got a D&quot;
+otherwise,
+    say &quot;I got an F&quot;
+</code></pre>
+                  <h1>Vocabulary</h1>
+                  <p class="mdl-definition"
+                     data-define="algorithm"
+                     data-title="Algorithm"
+                     data-text="A process or step-by-step procedure to perform a calculation or solve a problem, usually performed by a computer.">
+                     <strong>Algorithm</strong> - A process or step-by-step procedure to perform a calculation or solve a problem, usually performed by a computer.
+                  </p>
+                  <p class="mdl-definition"
+                     data-define="implementation"
+                     data-title="Implementation"
+                     data-text="The specific computer instructions that are used to carry out an algorithm.">
+                     <strong>Implementation</strong> - The specific computer instructions that are used to carry out an algorithm.
+                  </p>
+                  <p class="mdl-definition"
+                     data-define="procedural-programming"
+                     data-title="Procedural programming"
+                     data-text="Breaking down the intended functionality of a program into a sequence of steps.">
+                     <strong>Procedural programming</strong> - Breaking down the intended functionality of a program into a sequence of steps.
+                  </p>
+                  <p class="mdl-definition"
+                     data-define="function"
+                     data-title="Function"
+                     data-text="A sequence of reusable instructions that can take inputs and produce outputs.">
+                     <strong>Function</strong> - A sequence of reusable instructions that can take inputs and produce outputs.
+                  </p>
+                  <p class="mdl-definition"
+                     data-define="pseudocode"
+                     data-title="Pseudocode"
+                     data-text="An informal way to communicate the steps of an algorithm or process.">
+                     <strong>Pseudocode</strong> - An informal way to communicate the steps of an algorithm or process.
+                  </p>
+                  <p class="mdl-definition"
+                     data-define="code"
+                     data-title="Code"
+                     data-text="An informal term used to refer to computer programs and instructions.">
+                     <strong>Code</strong> - An informal term used to refer to computer programs and instructions.
+                  </p>
+                  <p class="mdl-definition"
+                     data-define="condition"
+                     data-title="Condition"
+                     data-text="A true or false statement.">
+                     <strong>Condition</strong> - A true or false statement.
+                  </p>
+                  <p class="mdl-definition"
+                     data-define="perfect-cube"
+                     style="display:none" 
+                     data-title="Perfect cube"
+                     data-text="An integer (whole number) that is the cube (third power) of another integer. For example, 27 is a perfect cube, since it is equal to 3 x 3 x 3.">
+                     <strong>Perfect cube</strong> - An integer (whole number) that is the cube (third power) of another integer. For example, 27 is a perfect cube, since it is equal to 3 x 3 x 3.
+                  </p>
+
+                  <h1>References</h1>
+                  <p>This lesson was written based on notes taken during lectures by Dr. Steven Rudich during the Leap@CMU program.
+                  </p>
+               </div>
+               <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--4dp section-link"
+                  onclick="window.location.href = 'cs-proofs.html'"
+                  data-next="cs-proofs.html"
+                  data-image="proof.jpg"
+                  data-title="Proofs"
+                  data-pretitle=""
+                  data-text="The techniques for creating a rigorous proof of a mathematical or logical assertion.">
+                  <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white"
+                     style="background-image:url(proof.jpg)">
+                     <div class="color" style="background-color:#4CAF50"></div>
+                     <i class="material-icons"> play_circle_filled </i>
+                  </header>
+                  <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                     <div class="mdl-card__supporting-text content">
+                        <h3><span style="color:#cfcfcf;margin-right:10px;font-weight:300;">
+                           NEXT 
+                           </span> Proofs
+                        </h3>
+                        <p style="opacity:0.8">The techniques for creating a rigorous proof of a mathematical or logical assertion.</p>
+                     </div>
+                  </div>
+               </section>
+               <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--4dp section-link"
+                  onclick="window.location.href = 'cs.html'"
+                  data-next="cs.html"
+                  data-image="cs-square.png"
+                  data-title="Computer Science"
+                  data-pretitle="BACK"
+                  data-text="An introduction to the theory of computation.">
+                  <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white"
+                     style="background-image:url(cs-square.png)">
+                     <div class="color" style="background-color:#4CAF50"></div>
+                     <i class="material-icons"> view_list </i>
+                  </header>
+                  <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                     <div class="mdl-card__supporting-text content">
+                        <h3><span style="color:#cfcfcf;margin-right:10px;font-weight:300;">
+                           BACK 
+                           </span> Computer Science
+                        </h3>
+                        <p style="opacity:0.8">An introduction to the theory of computation.</p>
+                     </div>
+                  </div>
+               </section>
+            </div>
+            <footer class="mdl-mega-footer">
+                  <div class="mdl-mega-footer__middle-section">
+                     <div class="mdl-mega-footer__drop-down-section">
+                        <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                        <h1 class="mdl-mega-footer__heading">About</h1>
+                        <ul class="mdl-mega-footer__link-list">
+                           <li><a href="about.html">About Us</a></li>
+                           <li><a href="learn.html">Learn Online</a></li>
+                           <li><a href="classes.html">Classes</a></li>
+                           <li><a href="camps.html">Camps</a></li>
+                           <li><a href="team.html">Team</a></li>
+                        </ul>
+                     </div>
+                     <div class="mdl-mega-footer__drop-down-section">
+                        <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                        <h1 class="mdl-mega-footer__heading">Quick Information</h1>
+                        <ul class="mdl-mega-footer__link-list">
+                           <li><strong style="color:#ffffff;opacity:0.6">Locations</strong><br>
+                              Pittsburgh, PA<br>
+                              Singapore, Singapore
+                           </li>
+                           <li style="margin-top:10px">
+                              <strong style="color:#ffffff;opacity:0.6">Email</strong><br>
+                              <a href="mailto:contact@codetocreate.org">
+                              contact@codetocreate.org</a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="mdl-mega-footer__drop-down-section">
+                        <br>
+                        <a href="https://twitter.com/code_to_create" target="_blank"><img src="twitter.png" width="80"></a>
+                        <a href="https://www.youtube.com/channel/UCsl6bPVaVRZ-CzQk3iu__cA" target="_blank"><img src="youtube.png" width="105"></a>
+                     </div>
+                  </div>
+                  <div class="mdl-mega-footer__bottom-section">
+                     <div class="mdl-logo">Website Designed by <a href="http://snavjivan.github.io" target="_blank">Sarthak Navjivan</a></div>
+                     <div class="mdl-logo">&copy; Code To Create, 2018</div>
+                     <ul class="mdl-mega-footer__link-list">
+                        <li><a href="contact.html">Contact Us</a></li>
+                     </ul>
+                  </div>
+               </footer>
+         </div>
+      </div>
+      <script src="app.js"></script>
+      <script src="curriculum.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script>
+   </body>
+</html>

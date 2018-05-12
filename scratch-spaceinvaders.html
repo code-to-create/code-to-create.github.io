@@ -1,0 +1,184 @@
+<!doctype html>
+
+<!-- Website Created and Designed by Sarthak Navjivan using HTML, CSS, and JS -->
+
+<!--
+   _____          _        _______       _____                _       
+  / ____|        | |      |__   __|     / ____|              | |      
+ | |     ___   __| | ___     | | ___   | |     _ __ ___  __ _| |_ ___ 
+ | |    / _ \ / _` |/ _ \    | |/ _ \  | |    | '__/ _ \/ _` | __/ _ \
+ | |___| (_) | (_| |  __/    | | (_) | | |____| | |  __/ (_| | ||  __/
+  \_____\___/ \__,_|\___|    |_|\___/   \_____|_|  \___|\__,_|\__\___|
+                                                                      
+-->
+
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Code To Create</title>
+      <link href="https://fonts.googleapis.com/css?family=Roboto:light,regular,bold,black&amp;lang=en" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+      <link rel="icon" href="favicon.png">
+      
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/default.min.css">
+   </head>
+   <body>
+      <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header curriculum list">
+         <div class="header mdl-layout__header mdl-layout__header--transparent">
+            <div class="mdl-layout__header-row">
+               <span class="title mdl-layout-title">
+               <a class="logo" href="index.html">Code<span class="lab">To</span>Create</a>
+               <a href="index.html"><img src="CTC.png" height="51" width="75"/></a>
+               </span>
+               <div class="mdl-layout-spacer"></div>
+               <nav class="mdl-navigation">
+                  <a class="mdl-navigation__link" href="about.html">About</a>
+                  <a class="mdl-navigation__link" href="learn.html">Learn!</a>
+                  <a class="mdl-navigation__link" href="classes.html">Classes</a>
+                  <a class="mdl-navigation__link" href="camps.html">Camps</a>
+                  <a class="mdl-navigation__link" href="team.html">Team</a>
+                  <a class="mdl-navigation__link" href="contact.html">Contact</a>
+               </nav>
+            </div>
+         </div>
+         <div class="mdl-layout__content">
+            <div class="container">
+               <div class="toolbar" id="toolbar">
+                  <div class="author-card mdl-shadow--4dp">
+                     <img class="headshot" src="sarthak-cropped.jpg">
+                     <p class="name">
+                        <span class="by">by</span> Sarthak Navjivan<br>
+                        <a class="email" href="mailto:sarthak@codetocreate.org">sarthak@codetocreate.org</a>
+                     </p>
+                  </div>
+                  <div class="back-card mdl-shadow--4dp"
+                     onclick="document.location.href = 'scratch.html'">
+                     <div class="image">
+                        <div class="color" style="background:#E91E63"></div>
+                        <img src="scratch-square.png">
+                     </div>
+                     <p class="name">
+                        <span class="by">back to course</span><br>
+                        Scratch
+                     </p>
+                  </div>
+               </div>
+               <div class="content mdl-shadow--4dp">
+                  <h1><a id="lesson-3-space-invaders-exercise" class="anchor" href="#lesson-3-space-invaders-exercise" data-text="Lesson 3: Space Invaders Exercise" data-ref="lesson-3-space-invaders-exercise" data-level="1"><span class="header-link"></span></a>Lesson 3: Space Invaders Exercise</h1>
+                  <h2><a id="introduction-to-space-invaders" class="anchor" href="#introduction-to-space-invaders" data-text="Introduction to Space Invaders" data-ref="introduction-to-space-invaders" data-level="2"><span class="header-link"></span></a>Introduction to Space Invaders</h2>
+                  <p>Now that you have more experience with Scratch, we will be building more complex games with more challenging instructions!  In the previous lessons, we learned how to create scoring based on the interaction between objects, how to dictate movement through the use of a cartesian coordinate system, how to personalize, and how to create losing and winning scenarios</p>
+                  <p>In this exercise, instructions will be given “abstractly”.  This means instead of giving instructions that are step by step oriented, we will give more general instructions.  You may be confused, but let us begin building one of the most influential games of all time.</p>
+                  <h2><a id="space-ship-basic-movement" class="anchor" href="#space-ship-basic-movement" data-text="Space Ship Basic Movement" data-ref="space-ship-basic-movement" data-level="2"><span class="header-link"></span></a>Space Ship Basic Movement</h2>
+                  <p>The space ship should only move along the x axis yet maintain a fixed y negative value.
+                     Set the controls of the spaceship to the left and right key pads.  Every time you hit the left or right arrow key, the ship should move x spaces.
+                  </p>
+                  <h2><a id="alien-movement-and-cloning" class="anchor" href="#alien-movement-and-cloning" data-text="Alien Movement and Cloning" data-ref="alien-movement-and-cloning" data-level="2"><span class="header-link"></span></a>Alien Movement and Cloning</h2>
+                  <h3><a id="new-concept-cloning" class="anchor" href="#new-concept-cloning" data-text="New Concept: Cloning" data-ref="new-concept-cloning" data-level="3"><span class="header-link"></span></a>New Concept: Cloning</h3>
+                  <p>Cloning is a command script allowing a sprite to clone or duplicate itself, while the project is running.  Clones will be the same as the original but as a separate entity.  Clones can have the same features, but can then be modified.  Notice that there are three blocks related to cloning: &quot;Create a clone of ()&quot; , &quot;When I start as a Clone&quot;, &quot;Delete this Clone&quot;.</p>
+                  <p>Build two types of aliens that will descend to the bottom of the screen. They should differ by speed at which the ball and their starting position should be randomized. (Hint: Unlike the starship, the aliens do not have a fixed y-value)</p>
+                  <p><img src="spaceinvaders1.png" alt=""></p>
+                  <p><img src="spaceinvaders2.png" alt=""></p>
+                  <h2><a id="laser-construction" class="anchor" href="#laser-construction" data-text="Laser Construction" data-ref="laser-construction" data-level="2"><span class="header-link"></span></a>Laser Construction</h2>
+                  <p>The behavior of the laser will have two basic command blocks. A third can be added for stylization and graphics. Correspond the laser firing when the space key is pressed. (Hint: Use a create cloning script within the forever/if space key statement). If the laser touches the edge, then it should delete itself and if the laser touches either alien invader, then the laser should also delete itself (Hint: If touching <em> or </em> or _ )</p>
+                  <h2><a id="scoring" class="anchor" href="#scoring" data-text="Scoring" data-ref="scoring" data-level="2"><span class="header-link"></span></a>Scoring</h2>
+                  <p>Create a scoring variable. This variable will be set to zero when the game begins. A positive point will be awarded for every time the laser touches an alien.  Every time the laser touches an alien clone, both the laser and alien clone should delete itself.  If an alien passes the bottom of the screen( a certain value of y), then the score changes by x points.  If you have more than 15 points, then you lose.  If you have more than 40 points, then you win the game.  If the alien touches the star fighter, then it the star fighter will automatically lose.</p>
+               </div>
+               <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--4dp section-link"
+                  onclick="window.location.href = 'scratch-pong.html'"
+                  data-next="scratch-pong.html"
+                  data-image="pong.png"
+                  data-title="Pong game"
+                  data-pretitle=""
+                  data-text="Learn about sensing and operator blocks by building this classic arcade game in Scratch">
+                  <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white"
+                     style="background-image:url(pong.png)">
+                     <div class="color" style="background-color:#E91E63"></div>
+                     <i class="material-icons"> play_circle_filled </i>
+                  </header>
+                  <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                     <div class="mdl-card__supporting-text content">
+                        <h3><span style="color:#cfcfcf;margin-right:10px;font-weight:300;">
+                           NEXT 
+                           </span> Pong game
+                        </h3>
+                        <p style="opacity:0.8">Learn about sensing and operator blocks by building this classic arcade game in Scratch</p>
+                     </div>
+                  </div>
+               </section>
+               <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--4dp section-link"
+                  onclick="window.location.href = 'scratch.html'"
+                  data-next="scratch.html"
+                  data-image="scratch-square.png"
+                  data-title=""
+                  data-pretitle="BACK"
+                  data-text="A tutorial for those new to computer science">
+                  <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white"
+                     style="background-image:url(scratch-square.png)">
+                     <div class="color" style="background-color:#E91E63"></div>
+                     <i class="material-icons"> view_list </i>
+                  </header>
+                  <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                     <div class="mdl-card__supporting-text content">
+                        <h3><span style="color:#cfcfcf;margin-right:10px;font-weight:300;">
+                           BACK 
+                           </span> 
+                        </h3>
+                        <p style="opacity:0.8">A simple, fun, and colorful introduction to computer science</p>
+                     </div>
+                  </div>
+               </section>
+            </div>
+            <footer class="mdl-mega-footer">
+                  <div class="mdl-mega-footer__middle-section">
+                     <div class="mdl-mega-footer__drop-down-section">
+                        <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                        <h1 class="mdl-mega-footer__heading">About</h1>
+                        <ul class="mdl-mega-footer__link-list">
+                           <li><a href="about.html">About Us</a></li>
+                           <li><a href="learn.html">Learn Online</a></li>
+                           <li><a href="classes.html">Classes</a></li>
+                           <li><a href="camps.html">Camps</a></li>
+                           <li><a href="team.html">Team</a></li>
+                        </ul>
+                     </div>
+                     <div class="mdl-mega-footer__drop-down-section">
+                        <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                        <h1 class="mdl-mega-footer__heading">Quick Information</h1>
+                        <ul class="mdl-mega-footer__link-list">
+                           <li><strong style="color:#ffffff;opacity:0.6">Locations</strong><br>
+                              Pittsburgh, PA<br>
+                              Singapore, Singapore
+                           </li>
+                           <li style="margin-top:10px">
+                              <strong style="color:#ffffff;opacity:0.6">Email</strong><br>
+                              <a href="mailto:contact@codetocreate.org">
+                              contact@codetocreate.org</a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="mdl-mega-footer__drop-down-section">
+                        <br>
+                        <a href="https://twitter.com/code_to_create" target="_blank"><img src="twitter.png" width="80"></a>
+                        <a href="https://www.youtube.com/channel/UCsl6bPVaVRZ-CzQk3iu__cA" target="_blank"><img src="youtube.png" width="105"></a>
+                     </div>
+                  </div>
+                  <div class="mdl-mega-footer__bottom-section">
+                     <div class="mdl-logo">Website Designed by <a href="http://snavjivan.github.io" target="_blank">Sarthak Navjivan</a></div>
+                     <div class="mdl-logo">&copy; Code To Create, 2018</div>
+                     <ul class="mdl-mega-footer__link-list">
+                        <li><a href="contact.html">Contact Us</a></li>
+                     </ul>
+                  </div>
+               </footer>
+         </div>
+      </div>
+      <script src="app.js"></script>
+      <script src="curriculum.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script>
+   </body>
+</html>

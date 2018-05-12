@@ -1,0 +1,223 @@
+<!doctype html>
+
+<!-- Website Created and Designed by Sarthak Navjivan using HTML, CSS, and JS -->
+
+<!--
+   _____          _        _______       _____                _       
+  / ____|        | |      |__   __|     / ____|              | |      
+ | |     ___   __| | ___     | | ___   | |     _ __ ___  __ _| |_ ___ 
+ | |    / _ \ / _` |/ _ \    | |/ _ \  | |    | '__/ _ \/ _` | __/ _ \
+ | |___| (_) | (_| |  __/    | | (_) | | |____| | |  __/ (_| | ||  __/
+  \_____\___/ \__,_|\___|    |_|\___/   \_____|_|  \___|\__,_|\__\___|
+                                                                      
+-->
+
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Code To Create</title>
+      <link href="https://fonts.googleapis.com/css?family=Roboto:light,regular,bold,black&amp;lang=en" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+      <link rel="icon" href="favicon.png">
+      
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/default.min.css">
+   </head>
+   <body>
+      <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header curriculum list">
+         <div class="header mdl-layout__header mdl-layout__header--transparent">
+            <div class="mdl-layout__header-row">
+               <span class="title mdl-layout-title">
+               <a class="logo" href="index.html">Code<span class="lab">To</span>Create</a>
+               <a href="index.html"><img src="CTC.png" height="51" width="75"/></a>
+               </span>
+               <div class="mdl-layout-spacer"></div>
+               <nav class="mdl-navigation">
+                  <a class="mdl-navigation__link" href="about.html">About</a>
+                  <a class="mdl-navigation__link" href="learn.html">Learn!</a>
+                  <a class="mdl-navigation__link" href="classes.html">Classes</a>
+                  <a class="mdl-navigation__link" href="camps.html">Camps</a>
+                  <a class="mdl-navigation__link" href="team.html">Team</a>
+                  <a class="mdl-navigation__link" href="contact.html">Contact</a>
+               </nav>
+            </div>
+         </div>
+         <div class="mdl-layout__content">
+            <div class="container">
+               <div class="toolbar" id="toolbar">
+                  <div class="author-card mdl-shadow--4dp">
+                     <img class="headshot" src="sarthak-cropped.jpg">
+                     <p class="name">
+                        <span class="by">by</span> Sarthak Navjivan<br>
+                        <a class="email" href="mailto:sarthak@codetocreate.org">sarthak@codetocreate.org</a>
+                     </p>
+                  </div>
+                  <div class="back-card mdl-shadow--4dp"
+                     onclick="document.location.href = 'java-beginner.html'">
+                     <div class="image">
+                        <div class="color" style="background:#4CAF50"></div>
+                        <img src="java-square.png">
+                     </div>
+                     <p class="name">
+                        <span class="by">back to course</span><br>
+                        Java - Beginner
+                     </p>
+                  </div>
+               </div>
+               <div class="content mdl-shadow--4dp">
+                  <h1><a id="welcome-to-java" class="anchor" href="#welcome-to-java" data-text="Welcome to Java!" data-ref="welcome-to-java" data-level="1"><span class="header-link"></span></a>Welcome to Java!</h1>
+                  <p>This course will give you a comprehensive introduction to the Java programming language: a useful, versatile, and popular language which can be used to create cool products such as Android and Web Applications. This is an introductory course, meaning no prior programming experience is required; however, a basic understanding of computer science principles is recommended. Since this will be many students' first experience with text-based programming, this course will focus on Java fundamentals, such as variables, operators, control statements, etc. Java is a vast language, so more advanced topics, such as algorithms, data structures, and graphics, will be discussed in later Java courses.</p>
+                  <h1><a id="java-setup" class="anchor" href="#java-setup" data-text="Java setup" data-ref="java-setup" data-level="1"><span class="header-link"></span></a>Java setup</h1>
+                  <p>Because of the relative complexity in compiling and running Java files, many programmers use an <strong data-definition="integrated-development-environment">Integrated Development Environment</strong> (IDE) to edit and run Java programs. We will use <strong data-definition="eclipse">Eclipse</strong>, a free IDE that can be downloaded from <a href="http://eclipse.org" target="_blank" data-link="eclipseorg">eclipse.org</a>.</p>
+                  <h2><a id="install-java-8" class="anchor" href="#install-java-8" data-text="Install Java 8" data-ref="install-java-8" data-level="2"><span class="header-link"></span></a>Install Java 8</h2>
+                  <p>Eclipse requires <strong data-definition="java-8">Java 8</strong>, which you can <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank" data-link="download-from-oracle">download from Oracle</a>. You must first accept their <a href="https://tldrlegal.com/license/oracle-binary-code-license-agreement-for-the-java-se-platform-products-and-javafx" target="_blank" data-link="license-agreement">license agreement</a>, after which you can download the installer for your <strong data-definition="operating-system">operating system</strong>.</p>
+                  <p><img src="oracle.png" alt=""></p>
+                  <h3><a id="mac-osx" class="anchor" href="#mac-osx" data-text="Mac OSX" data-ref="mac-osx" data-level="3"><span class="header-link"></span></a>Mac OSX</h3>
+                  <p>The downloaded file will open a disk image, and you will have to double click the <code>.pkg</code> file inside the disk image to run the installer. You will need an account with administrator privileges to install Java 8.</p>
+                  <p><img src="oracle-mac.png" alt=""></p>
+                  <h3><a id="windows" class="anchor" href="#windows" data-text="Windows" data-ref="windows" data-level="3"><span class="header-link"></span></a>Windows</h3>
+                  <p>On some Windows computers, the JDK 8 installer will not properly configure your computer to work with Java. This can usually be fixed by <a href="http://docs.oracle.com/javase/8/docs/technotes/guides/install/windows_jdk_install.html#BABGDJFH" target="_blank" data-link="setting-your-path-variable">setting your PATH variable</a>.</p>
+                  <p>Another possible issue that arises on Windows is when there are multiple versions of Java installed. Try uninstalling all versions of Java from the Control Panel, then re-install Java 8.</p>
+                  <h2><a id="install-eclipse" class="anchor" href="#install-eclipse" data-text="Install Eclipse" data-ref="install-eclipse" data-level="2"><span class="header-link"></span></a>Install Eclipse</h2>
+                  <p>The Eclipse installer can be downloaded from <a href="http://eclipse.org/downloads" target="_blank" data-link="eclipseorgdownloads">eclipse.org/downloads</a>. Select your operating system to download its Eclipse installer.</p>
+                  <p><img src="eclipse-download-site.png" alt=""></p>
+                  <p>Click the orange download button to start downloading Eclipse.</p>
+                  <p><img src="eclipse-download-button.png" alt=""></p>
+                  <p>Open the downloaded Eclipse Installer and click &quot;Eclipse IDE for Java Developers&quot;.</p>
+                  <p><img src="eclipse-installer.png" alt=""></p>
+                  <p>You can install Eclipse in the default <code>eclipse</code> folder, or select a different folder.</p>
+                  <div class="tip">
+                     <p>On Mac OSX, you may want to change the installation folder to <code>/Applications/eclipse</code> if you don&#39;t plan on installing multiple versions of Eclipse.</p>
+                  </div>
+                  <p>Accept the <a href="https://www.tldrlegal.com/l/epl" target="_blank" data-link="eclipse-license-agreement">Eclipse license agreement</a> (or click &quot;Decide Later&quot;) to begin the installation.</p>
+                  <p><img src="eclipse-installer-agreement.png" alt=""></p>
+                  <p>Once Eclipse has completed installation, you can click the green Launch button to open it.</p>
+                  <h2><a id="how-to-use-eclipse" class="anchor" href="#how-to-use-eclipse" data-text="How to use Eclipse" data-ref="how-to-use-eclipse" data-level="2"><span class="header-link"></span></a>How to use Eclipse</h2>
+                  <p>Eclipse can be used with many programming languages, and has an immense set of features and tools under the hood. In our course, we will only need to do three basic things with Eclipse - create folders, create files in those folders, and import code from external files.</p>
+                  <p>When you open Eclipse for the first time, you will need to click the &quot;Workbench&quot; link.</p>
+                  <p><img src="eclipse-welcome.png" alt=""></p>
+                  <p>The Workbench is just a fancy text editor that starts off with a lot of additional panels that we won&#39;t need. Click the x&#39;s to close every panel <em>except for the Package Explorer</em>.</p>
+                  <div class="tip">
+                     <p>You can re-open any panel by going to <code>Window</code> &gt; <code>Show View</code> and clicking on the name of the panel.</p>
+                  </div>
+                  <p><img src="eclipse-close-panels.png" alt=""></p>
+                  <h3><a id="create-a-project" class="anchor" href="#create-a-project" data-text="Create a project" data-ref="create-a-project" data-level="3"><span class="header-link"></span></a>Create a project</h3>
+                  <p>A Java Project is just a folder on your computer that is managed by Eclipse. You can create Java Projects by right clicking on the Package Explorer, hovering over &quot;New&quot;, and selecting &quot;Java Project&quot;.</p>
+                  <div class="tip">
+                     <p>If you hid the package explorer, navigate in the top menu to <code>Window</code> &gt; <code>Show View</code> &gt; <code>Package Explorer</code> to re-open it.</p>
+                  </div>
+                  <p><img src="eclipse-new.png" alt=""></p>
+                  <p>In the dialog box that pops up, enter a name for the project, then click &quot;Finish&quot;.</p>
+                  <h3><a id="create-a-file" class="anchor" href="#create-a-file" data-text="Create a file" data-ref="create-a-file" data-level="3"><span class="header-link"></span></a>Create a file</h3>
+                  <p>To create a file, right click on the <code>src</code> folder, hover over &quot;New&quot;, and select &quot;Class&quot;.</p>
+                  <p><img src="eclipse-new-file.png" alt=""></p>
+                  <h3><a id="create-a-package" class="anchor" href="#create-a-package" data-text="Create a package" data-ref="create-a-package" data-level="3"><span class="header-link"></span></a>Create a package</h3>
+                  <p>A package is a sub-folder within the Java Project that provides an additional level of organization for your files.</p>
+                  <h1>Vocabulary</h1>
+                  <p class="mdl-definition"
+                     data-define="operating-system"
+                     data-title="Operating system"
+                     data-text="The program that manages the underlying operations of your computer. This is usually Mac OSX (for Apple computers), Windows, or Linux.">
+                     <strong>Operating system</strong> - The program that manages the underlying operations of your computer. This is usually Mac OSX (for Apple computers), Windows, or Linux.
+                  </p>
+                  <p class="mdl-definition"
+                     data-define="integrated-development-environment"
+                     data-title="Integrated Development Environment"
+                     data-text="A program that makes it easier for a programmer to edit and run programs, commonly abbreviated as IDE.">
+                     <strong>Integrated Development Environment</strong> - A program that makes it easier for a programmer to edit and run programs, commonly abbreviated as IDE.
+                  </p>
+                  <p class="mdl-definition"
+                     data-define="eclipse"
+                     data-title="Eclipse"
+                     data-text="A free Integrated Development Environment used in Java development.">
+                     <strong>Eclipse</strong> - A free Integrated Development Environment used in Java development.
+                  </p>
+                  <p class="mdl-definition"
+                     data-define="java-8"
+                     data-title="Java 8"
+                     data-text="The latest version of the Java programming language.">
+                     <strong>Java 8</strong> - The latest version of the Java programming language.
+                  </p>
+                  <p class="mdl-definition"
+                     data-define="build-path"
+                     data-title="Build path"
+                     data-text="The folders on your computer where Java looks for libraries and external resources.">
+                     <strong>Build path</strong> - The folders on your computer where Java looks for libraries and external resources.
+                  </p>
+               </div>
+               <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--4dp section-link"
+                  onclick="window.location.href = 'java-beginner.html'"
+                  data-next="java-beginner.html"
+                  data-image="java-square.png"
+                  data-title="Java"
+                  data-pretitle="BACK"
+                  data-text="An introduction to one of the most popular programming languages in use: Java.">
+                  <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white"
+                     style="background-image:url(java-square.png)">
+                     <div class="color" style="background-color:#9C27B0"></div>
+                     <i class="material-icons"> view_list </i>
+                  </header>
+                  <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                     <div class="mdl-card__supporting-text content">
+                        <h3><span style="color:#cfcfcf;margin-right:10px;font-weight:300;">
+                           BACK 
+                           </span> Java
+                        </h3>
+                        <p style="opacity:0.8">An introduction to one of the most popular programming languages in use: Java.</p>
+                     </div>
+                  </div>
+               </section>
+            </div>
+            <footer class="mdl-mega-footer">
+                  <div class="mdl-mega-footer__middle-section">
+                     <div class="mdl-mega-footer__drop-down-section">
+                        <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                        <h1 class="mdl-mega-footer__heading">About</h1>
+                        <ul class="mdl-mega-footer__link-list">
+                           <li><a href="about.html">About Us</a></li>
+                           <li><a href="learn.html">Learn Online</a></li>
+                           <li><a href="classes.html">Classes</a></li>
+                           <li><a href="camps.html">Camps</a></li>
+                           <li><a href="team.html">Team</a></li>
+                        </ul>
+                     </div>
+                     <div class="mdl-mega-footer__drop-down-section">
+                        <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                        <h1 class="mdl-mega-footer__heading">Quick Information</h1>
+                        <ul class="mdl-mega-footer__link-list">
+                           <li><strong style="color:#ffffff;opacity:0.6">Locations</strong><br>
+                              Pittsburgh, PA<br>
+                              Singapore, Singapore
+                           </li>
+                           <li style="margin-top:10px">
+                              <strong style="color:#ffffff;opacity:0.6">Email</strong><br>
+                              <a href="mailto:contact@codetocreate.org">
+                              contact@codetocreate.org</a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="mdl-mega-footer__drop-down-section">
+                        <br>
+                        <a href="https://twitter.com/code_to_create" target="_blank"><img src="twitter.png" width="80"></a>
+                        <a href="https://www.youtube.com/channel/UCsl6bPVaVRZ-CzQk3iu__cA" target="_blank"><img src="youtube.png" width="105"></a>
+                     </div>
+                  </div>
+                  <div class="mdl-mega-footer__bottom-section">
+                     <div class="mdl-logo">Website Designed by <a href="http://snavjivan.github.io" target="_blank">Sarthak Navjivan</a></div>
+                     <div class="mdl-logo">&copy; Code To Create, 2018</div>
+                     <ul class="mdl-mega-footer__link-list">
+                        <li><a href="contact.html">Contact Us</a></li>
+                     </ul>
+                  </div>
+               </footer>
+         </div>
+      </div>
+      <script src="app.js"></script>
+      <script src="curriculum.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script>
+   </body>
+</html>

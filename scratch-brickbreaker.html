@@ -1,0 +1,206 @@
+<!doctype html>
+
+<!-- Website Created and Designed by Sarthak Navjivan using HTML, CSS, and JS -->
+
+<!--
+   _____          _        _______       _____                _       
+  / ____|        | |      |__   __|     / ____|              | |      
+ | |     ___   __| | ___     | | ___   | |     _ __ ___  __ _| |_ ___ 
+ | |    / _ \ / _` |/ _ \    | |/ _ \  | |    | '__/ _ \/ _` | __/ _ \
+ | |___| (_) | (_| |  __/    | | (_) | | |____| | |  __/ (_| | ||  __/
+  \_____\___/ \__,_|\___|    |_|\___/   \_____|_|  \___|\__,_|\__\___|
+                                                                      
+-->
+
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Code To Create</title>
+      <link href="https://fonts.googleapis.com/css?family=Roboto:light,regular,bold,black&amp;lang=en" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+      <link rel="icon" href="favicon.png">
+      
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/default.min.css">
+   </head>
+   <body>
+      <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header curriculum list">
+         <div class="header mdl-layout__header mdl-layout__header--transparent">
+            <div class="mdl-layout__header-row">
+               <span class="title mdl-layout-title">
+               <a class="logo" href="index.html">Code<span class="lab">To</span>Create</a>
+               <a href="index.html"><img src="CTC.png" height="51" width="75"/></a>
+               </span>
+               <div class="mdl-layout-spacer"></div>
+               <nav class="mdl-navigation">
+                  <a class="mdl-navigation__link" href="about.html">About</a>
+                  <a class="mdl-navigation__link" href="learn.html">Learn!</a>
+                  <a class="mdl-navigation__link" href="classes.html">Classes</a>
+                  <a class="mdl-navigation__link" href="camps.html">Camps</a>
+                  <a class="mdl-navigation__link" href="team.html">Team</a>
+                  <a class="mdl-navigation__link" href="contact.html">Contact</a>
+               </nav>
+            </div>
+         </div>
+         <div class="mdl-layout__content">
+            <div class="container">
+               <div class="toolbar" id="toolbar">
+                  <div class="author-card mdl-shadow--4dp">
+                     <img class="headshot" src="sarthak-cropped.jpg">
+                     <p class="name">
+                        <span class="by">by</span> Sarthak Navjivan<br>
+                        <a class="email" href="mailto:sarthak@codetocreate.org">sarthak@codetocreate.org</a>
+                     </p>
+                  </div>
+                  <div class="back-card mdl-shadow--4dp"
+                     onclick="document.location.href = 'scratch.html'">
+                     <div class="image">
+                        <div class="color" style="background:#E91E63"></div>
+                        <img src="scratch-square.png">
+                     </div>
+                     <p class="name">
+                        <span class="by">back to course</span><br>
+                        Scratch
+                     </p>
+                  </div>
+               </div>
+               <div class="content mdl-shadow--4dp">
+                  <h1><a id="introduction-to-brick-breaker" class="anchor" href="#introduction-to-brick-breaker" data-text="Lesson 2: Brick Breaker" data-ref="introduction-to-brick-breaker" data-level="1"><span class="header-link"></span></a>Lesson 2: Brick Breaker</h1>
+                  <p>If you have ever played the game brick breaker, then you understand that there are three main components to the game.  There are the bricks, paddle, and ball.  The objective of the game is to clear the bricks by bouncing the ball off the bricks.  If the brick misses the paddle, then you lose the game.</p>
+                  <p>This tutorial will guide you deeper into the logic of computer science.  It may be confusing at first, but the more you play around the more you will begin to understand the logic.  In this tutorial, we will first start with building the individual motions of the components and then we will create the interactive relationships between the components.</p>
+                  <h2><a id="create-interactive-paddle" class="anchor" href="#create-interactive-paddle" data-text="Create Interactive Panel" data-ref="create-interactive-paddle" data-level="2"><span class="header-link"></span></a>Create Interactive Panel</h2>
+                  <p>Construct a new Sprite and name it “Paddle”, see the image below of an example.  Setting the Position of the Paddle.  Go to the events tab, drag and drop when green flag clicked set the position of the block at a x= 0 and y = 0.</p>
+                  <p>Setting the Motion of the Paddle.  Drag and drop the motion block point towards mouse pointer. Drag and drop the motion block and move 10 steps.  Drag and drop the motion block set y = 0. Click on the Paddle info button in the Sprite box and change the rotation style to fixed.</p>
+                  <p>We understand that the ball will have to ricochet off of the brick.  We will get to this part later, but for now, let us predictively drag and drop an if/then statement.  Let’s predictively state if the ball touches the paddle, then it will bounce.</p>
+                  <p>Experiment and see if your paddle has regular motion.</p>
+                  <h2><a id="movement-and-placement-by-cartesian-graph-summary" class="anchor" href="#movement-and-placement-by-cartesian-graph-summary" data-text="Movement and Placement by Cartesian Graph Summary" data-ref="movement-and-placement-by-cartesian-graph-summary" data-level="2"><span class="header-link"></span></a>Movement and Placement by Cartesian Graph Summary</h2>
+                  <p>We used the coordinate system to set the position of the the paddle.  This is important to understand that Scratch uses Cartesian Graphs.  Locations can be assigned numerical values.   Change the background of the stage backdrop to the XY graph which can be found in the “other” backdrop category.</p>
+                  <h2><a id="ifthen-statements" class="anchor" href="#ifthen-statements" data-text="If/then statements" data-ref="ifthen-statements" data-level="2"><span class="header-link"></span></a>If/then statements</h2>
+                  <p>Let us review the concept of the if/then statement, that is similar to cause and effect.   Imagine you want to watch tv.   “If” you press the TV’s power button, “then” the TV will turn on.  Again, in relation to the paddle and the ball, if the ball touches the paddle, then it will bounce.  An action triggers a responsive action.</p>
+                  <h3><a id="1-constructing-the-ball-motion" class="anchor" href="#1-constructing-the-ball-motion" data-text="1. Constructing the ball motion" data-ref="1-constructing-the-ball-motion" data-level="3"><span class="header-link"></span></a>1. Constructing the ball motion</h3>
+                  <p>Create a new sprite and for convention’s sake, we will be using a ball from the thing category. Rename the new sprite as Ball.</p>
+                  <h3><a id="2-set-the-placement-of-the-ball" class="anchor" href="#2-set-the-placement-of-the-ball" data-text="2. Set the placement of the ball" data-ref="2-set-the-placement-of-the-ball" data-level="3"><span class="header-link"></span></a>2. Set the placement of the ball</h3>
+                  <p>Drag and drop the Event block when green flagged click.  Drag and drop the Motion block go to x and y and change the y value.  Drag and drop the Motion block point in direction 135 (so that it points down).  Add a forever command and drag and drop the motion block move 10 steps and if on edge bounce.  As of now, it will look something like this.</p>
+                  <h3><a id="3-preemptive-and-predictive-steps" class="anchor" href="#3-preemptive-and-predictive-steps" data-text="3. Preemptive and Predictive steps" data-ref="3-preemptive-and-predictive-steps" data-level="3"><span class="header-link"></span></a>3. Preemptive and Predictive steps</h3>
+                  <p>Since we are budding computer scientists, we understand that if the ball goes past the paddle, the player loses the game.  So let’s predictively put an if/then statement in for now.<br>We also understand that if the ball touches the paddle, it will bounce.  Let’s leave this for now and we’ll come back to this later.</p>
+                  <p><img src="brickbreaker4.png" alt=""></p>
+                  <h2><a id="anticipating-interactions" class="anchor" href="#anticipating-interactions" data-text="Anticipating Interactions" data-ref="anticipating-interactions" data-level="2"><span class="header-link"></span></a>Anticipating Interactions</h2>
+                  <p>Much like in the constructing of the paddle, we used the cartesian coordinate system as a way to a set the initial position of the ball.  We also anticipated the interaction between the ball and the paddle and if the ball passes the paddle,the player loses the game.</p>
+                  <h2><a id="ball-and-paddle-interaction-i" class="anchor" href="#ball-and-paddle-interaction-i" data-text="Ball and Paddle interaction I" data-ref="ball-and-paddle-interaction-i" data-level="2"><span class="header-link"></span></a>Ball and Paddle interaction I</h2>
+                  <p>Drag and drop an if/then block within the forever command but below the motion blocks.<br>For the paddle to interact with the ball, the paddle has to sense the ball.  Click on the Sensing script and drag and drop the touching block, into the “if” statement block
+                     For the “then” statement, drag and drop the Broadcast command block and click on the drop down menu.  Create a new message and call it bounce.
+                  </p>
+                  <h2><a id="ball-and-paddle-interaction-ii" class="anchor" href="#ball-and-paddle-interaction-ii" data-text="Ball and Paddle Interaction II" data-ref="ball-and-paddle-interaction-ii" data-level="2"><span class="header-link"></span></a>Ball and Paddle Interaction II</h2>
+                  <p>If the paddle broadcasts a message, then the ball should receive a message.   Drag and drop the when I receive command block and select bounce from the drop down menu.  Drag and drop the Motion block point that accounts orients motion with direction.  Drag and drop the subtraction block from the Operator script.  Put 180 in the first place holder and then the direction block from the motion script.  Drag and drop move 10 steps</p>
+                  <p><img src="brickbreaker5.png" alt=""></p>
+                  <p><img src="brickbreaker6.png" alt=""></p>
+                  <h2><a id="interacting-objects-summary" class="anchor" href="#interacting-objects-summary" data-text="Interacting Objects Summary" data-ref="interacting-objects-summary" data-level="2"><span class="header-link"></span></a>Interacting Objects Summary</h2>
+                  <p>We learned how to establish an interactive relationship between the paddle and the ball.   When the paddle touches ball, it broadcasts a message to the ball, which we labeled bounce.  The ball receives that particular message and then executes it&#39;s bouncing motion.   In a way, the relationship between the paddle and the ball loosely mirrors the body’s reflexes.  Imagine it’s a cold winter day and your huddled up next to a glorious raging fire.  You put your hands out to warm them up because the fire is “broadcasting” heat.  If you touch the fire, you’re body will immediately react and your hands will jolt away from the fire, as they do not want to be burned!</p>
+                  <h2><a id="winning-and-losing-scenarios" class="anchor" href="#winning-and-losing-scenarios" data-text="Winning and Losing Scenarios" data-ref="winning-and-losing-scenarios" data-level="2"><span class="header-link"></span></a>Winning and Losing Scenarios</h2>
+                  <p>Click on the Ball’s Sprite and an if/then command block.  Within the if placeholder, add a less than (&lt;) operator block.  Place a y position motion into the first placeholder and a numerical y value into the second placeholder.   Use the broadcast message and create a new message called game over.  Implementing the Game Over Sprite.  Turn the canvas into a vector and use the text box to say game over.  Drag and drop the when green flag clicked.  Drag and drop the hide motion.  Create a new Event with when I receive “Game Over”.  Drag and Drop the command block show and subsequently the control block stop all.</p>
+                  <p>Add a control event.  Add a hide motion from the looks script. Add a data script and create a variable called score.  Drag and drop a data block to set score to. Drag and drop a command block called wait until and set the score equal to whatever number you’d like.  Drag and drop the Look script show.  Drag and drop the Control command stop all.</p>
+                  <h2><a id="brick-building" class="anchor" href="#brick-building" data-text="Brick Building" data-ref="brick-building" data-level="2"><span class="header-link"></span></a>Brick Building</h2>
+                  <p>Make a new sprite and label it the brick.  Drag and drop an Event called when green flag clicked.  Add a forever loop.  Add an if/then statement.  Drag and drop a sensing script and use the broadcast bounce.  When a brick breaks make sure it adds a score.  When you’re done creating a brick, duplicate it by through the left click.</p>
+                  <p><img src="brickbreaker7.png" alt=""></p>
+                  <p>Bringing it all together: 
+                     We constructed a losing scenario and a winning scenario.  In the losing scenario, we attached the losing outcome to the ball surpassing some value of y.  In the winning scenario, we attached the destruction of a brick to a variable called score.  To win the game every bounce message that is passed between a ball and the brick is counted as a score.  Isn’t this fascinating?  Can you see the logic?
+                  </p>
+               </div>
+               <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--4dp section-link"
+                  onclick="window.location.href = 'scratch-spaceinvaders.html'"
+                  data-next="scratch-spaceinvaders.html"
+                  data-image="spaceinvaders.png"
+                  data-title="Space Invaders"
+                  data-pretitle=""
+                  data-text="Learn to fire projectiles by building a game where your spaceship has to repel invading aliens">
+                  <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white"
+                     style="background-image:url(spaceinvaders.png)">
+                     <div class="color" style="background-color:#E91E63"></div>
+                     <i class="material-icons"> play_circle_filled </i>
+                  </header>
+                  <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                     <div class="mdl-card__supporting-text content">
+                        <h3><span style="color:#cfcfcf;margin-right:10px;font-weight:300;">
+                           NEXT 
+                           </span> Space Invaders
+                        </h3>
+                        <p style="opacity:0.8">Learn to fire projectiles by building a game where your spaceship has to repel invading aliens</p>
+                     </div>
+                  </div>
+               </section>
+               <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--4dp section-link"
+                  onclick="window.location.href = 'scratch.html'"
+                  data-next="scratch.html"
+                  data-image="scratch-square.png"
+                  data-title=""
+                  data-pretitle="BACK"
+                  data-text="A tutorial for those new to computer science">
+                  <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white"
+                     style="background-image:url(scratch-square.png)">
+                     <div class="color" style="background-color:#E91E63"></div>
+                     <i class="material-icons"> view_list </i>
+                  </header>
+                  <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                     <div class="mdl-card__supporting-text content">
+                        <h3><span style="color:#cfcfcf;margin-right:10px;font-weight:300;">
+                           BACK 
+                           </span> 
+                        </h3>
+                        <p style="opacity:0.8">A simple, fun, and colorful introduction to computer science</p>
+                     </div>
+                  </div>
+               </section>
+            </div>
+            <footer class="mdl-mega-footer">
+                  <div class="mdl-mega-footer__middle-section">
+                     <div class="mdl-mega-footer__drop-down-section">
+                        <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                        <h1 class="mdl-mega-footer__heading">About</h1>
+                        <ul class="mdl-mega-footer__link-list">
+                           <li><a href="about.html">About Us</a></li>
+                           <li><a href="learn.html">Learn Online</a></li>
+                           <li><a href="classes.html">Classes</a></li>
+                           <li><a href="camps.html">Camps</a></li>
+                           <li><a href="team.html">Team</a></li>
+                        </ul>
+                     </div>
+                     <div class="mdl-mega-footer__drop-down-section">
+                        <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                        <h1 class="mdl-mega-footer__heading">Quick Information</h1>
+                        <ul class="mdl-mega-footer__link-list">
+                           <li><strong style="color:#ffffff;opacity:0.6">Locations</strong><br>
+                              Pittsburgh, PA<br>
+                              Singapore, Singapore
+                           </li>
+                           <li style="margin-top:10px">
+                              <strong style="color:#ffffff;opacity:0.6">Email</strong><br>
+                              <a href="mailto:contact@codetocreate.org">
+                              contact@codetocreate.org</a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="mdl-mega-footer__drop-down-section">
+                        <br>
+                        <a href="https://twitter.com/code_to_create" target="_blank"><img src="twitter.png" width="80"></a>
+                        <a href="https://www.youtube.com/channel/UCsl6bPVaVRZ-CzQk3iu__cA" target="_blank"><img src="youtube.png" width="105"></a>
+                     </div>
+                  </div>
+                  <div class="mdl-mega-footer__bottom-section">
+                     <div class="mdl-logo">Website Designed by <a href="http://snavjivan.github.io" target="_blank">Sarthak Navjivan</a></div>
+                     <div class="mdl-logo">&copy; Code To Create, 2018</div>
+                     <ul class="mdl-mega-footer__link-list">
+                        <li><a href="contact.html">Contact Us</a></li>
+                     </ul>
+                  </div>
+               </footer>
+         </div>
+      </div>
+      <script src="app.js"></script>
+      <script src="curriculum.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script>
+   </body>
+</html>
